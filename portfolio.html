@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:wght@600&family=Quicksand:wght@400;500&display=swap");
+      body {
+        background-color: #e2e2e2;
+        color: #000000;
+        margin: 20px auto;
+        font-family: "Quicksand";
+        max-width: 1400px;
+        
+      }
+      
+      header {
+        color: #002a61;
+        background-color: #ffffff;
+        font-size: 50px;
+        margin-top: 20px;
+        padding-left: 100px;
+        font-family: "Poppins";
+        font-weight: 500;
+      }
+      navbar {
+        background-color: #50b4ee;
+        height: 50px;
+        margin: 20px auto;
+        color:black ;
+        display: flex;
+      }
+      a {
+        color: #010f30;
+        font-size: 20px;
+        text-decoration: none;
+        align-self: center;
+        padding-left: 50px;
+        font-weight: 500;
+      }
+      #myVideo {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+    }
+.content {
+        position: fixed;
+        top:0;
+        
+        color: #f1f1f1;
+        width: 100%;
+        padding: 20px;
+      }
+      
+    </style>
+  </head>
+  <body>
+    
+    
+    <video autoplay muted loop id="myVideo">
+        <source src="Comp_8.mp4" type="video/mp4">
+    </video>
+
+    <div class="content">
+        <header>Portfolio</header>
+    <navbar>
+      <a href="#">HOME</a>
+      <a href="#">ABOUT</a>
+      <a href="#">ACADEMICS</a>
+      <a href="#">EXPERIENCE</a>
+      <a href="#">HOBBIES</a>
+    </navbar>
+    </div>
+  </body>
+</html>
