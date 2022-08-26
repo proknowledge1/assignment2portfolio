@@ -9,7 +9,7 @@
     <style>
       @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:wght@600&family=Quicksand:wght@400;500&display=swap");
       body {
-        background-color: #e2e2e2;
+        background-image: linear-gradient(to bottom right, rgb(184, 250, 175), rgb(255, 193, 111));
         color: #000000;
         margin: 20px 0px 20px 0px;
         font-family: "Quicksand";
@@ -25,14 +25,9 @@
         padding-right: 100px;
         font-family: "Poppins";
         font-weight: 500;
+        margin-bottom:15px;
       }
-      navbar {
-        background-color: #79797981;
-        height: 50px;
-        margin: 20px auto;
-        color: black;
-        display: flex;
-      }
+      
       a {
         color: #010f30;
         font-size: 20px;
@@ -41,15 +36,11 @@
         padding-left: 50px;
         font-weight: 500;
       }
-      #myVideo {
-        position: fixed;
-        right: 0;
-        bottom: 0;
-        min-width: 100%;
-        
+      a:hover{
+        color:rgb(250, 215, 215);
       }
       .content {
-        position: fixed;
+        
         top: 0;
         display:block;
         color: #000000;
@@ -57,6 +48,7 @@
         padding: 20px;
       }
       .main{
+        padding-left: 100px;
         display: flex;
         flex-direction: row;
       }
@@ -65,8 +57,10 @@
         margin-right: 30px;
         border-radius: 50%;
         display:flex;
+        margin-left: 70px;
       }
       .write{
+        padding-left: 300px;
         font-family: "Poppins";
         color:#000000;
         padding-left: 40px;
@@ -80,34 +74,37 @@
         border:2px rgba(82, 82, 82, 0.747) solid;
         
       }
-      .write p{
+      .write + p{
         font-weight: 700;
       }
       .elements{
         display:flex;
         flex-direction:row;
       }
-      
+
+      .lefty{
+        display:flex;
+        flex-direction: column;
+      }
     </style>
   </head>
   <body>
-    <video autoplay muted loop id="myVideo">
-      <source src="Comp_8.mp4" type="video/mp4" />
-    </video>
-
+   
     <div class="content">
       <header>Portfolio</header>
-      <navbar>
-        <a href="#">HOME</a>
-        <a href="#">ABOUT</a>
-        <a href="#">ACADEMICS</a>
-        <a href="#">EXPERIENCE</a>
-        <a href="#">HOBBIES</a>
-      </navbar>
+      
       <div class="main">
-        <div>
+        <div class="lefty">
+          <div>
             <img src="animal.jpg" alt="animal" />
-        </div>    
+        </div>  
+        <br>
+        <br>
+        <div class="video">
+          <iframe  align="right" width="515" height="315" src="https://www.youtube.com/embed/XwIUnlX7qHk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        </div>
+        </div>  
         <div class="write">
             <p>ACADEMICS</p>
             <ul type="disc">
@@ -117,10 +114,27 @@
             </ul>
             <p>SKILLS</p>
             <div class="elements">
-                <img src="mongo.jpg">
-                <img src="express.jpg">
-                <img src="react.jpg">
-                <img src="node.jpg">
+              <img src="mongo.jpg">
+              <img src="express.jpg">
+              <img src="react.jpg">
+              <img src="node.jpg">
+            </div>
+            <p>HOBBIES</p>
+            <ul type="disc">
+                <li>Badmintoh</li>
+                <li>Table Tennis</li>
+                <li>Singing</li>
+            </ul>
+           
+            
+            <hr>
+            <pre>
+              Contact Information:
+              VESIT,
+              <a href="https://www.w3schools.com/css/css3_gradients.asp">2020.saniya.inamdar@ves.ac.in</a>
+              Ph.70152236523
+            </pre>
+
         </div>
         
     </div>
